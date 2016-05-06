@@ -6,6 +6,6 @@
   when: sublime_preferences != "" and ansible_os_family == "Darwin"
 
 - name: "OS X | configure sublime user settings"
-  template:
-    src: ../templates/Preferences.sublime-settings.j2
+  copy:
+    src: "{{ sublime_prefs }}"
     dest: "{{ ansible_user_dir }}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"

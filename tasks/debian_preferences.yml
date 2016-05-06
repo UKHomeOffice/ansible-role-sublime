@@ -5,6 +5,6 @@
     state: directory
 
 - name: "Debian | configure sublime user settings"
-  template:
-    src: ../templates/Preferences.sublime-settings.j2
+  copy:
+    src: "{{ sublime_prefs }}"
     dest: "{{ ansible_user_dir }}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"

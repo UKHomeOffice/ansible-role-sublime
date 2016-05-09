@@ -72,3 +72,6 @@ target/
 
 # Javascript
 node_modules/
+
+# Ansible
+*.retry

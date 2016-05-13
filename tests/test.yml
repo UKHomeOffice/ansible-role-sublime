@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: dev
   roles:
-    - name: run whole shebang
-      role: ../../ansible-role-sublime
+    - role: ../..
+      become: true

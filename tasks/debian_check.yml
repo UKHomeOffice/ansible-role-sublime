@@ -1,0 +1,7 @@
+---
+- name: "Debian | check sublime build"
+  shell: "/usr/bin/subl --version | awk '{print $4}'"
+  register: __build
+
+- include: debian_install.yml
+  when: __build != sublime_build

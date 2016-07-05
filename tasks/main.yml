@@ -1,6 +1,6 @@
 ---
-- include: debian_install.yml
+- include: debian_check.yml
   when: ansible_os_family == "Debian"
 
-- include: osx_install.yml
+- include: osx_check.yml
   when: ansible_os_family == "Darwin"

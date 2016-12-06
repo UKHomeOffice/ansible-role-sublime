@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+Ansible role for installing and setting up Sublime.
 
 Requirements
 ------------

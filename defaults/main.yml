@@ -1,2 +1,3 @@
 ---
 sublime_build: 3126
+validate_certs: no

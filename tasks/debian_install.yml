@@ -3,6 +3,7 @@
   get_url:
     url: "{{ __url_deb }}"
     dest: "{{ __tmp_deb }}"
+    validate_certs: "{{validate_certs}}"
   tags:
     - packages
     - sublimetext
